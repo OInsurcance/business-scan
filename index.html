@@ -170,6 +170,64 @@ section{margin-top:44px;display:flex;flex-direction:column;gap:14px}
 .one .ck > div:nth-child(2n){border-right:0}
 .vhead{display:flex;align-items:center;gap:10px}
 .vdot{width:14px;height:14px;border-radius:50%;background:var(--vc);display:inline-block}
+.gs{margin-top:4px;border-left:3px solid var(--graphite);background:#f1efed;border-radius:0 6px 6px 0;padding:6px 8px;font-size:12.8px;color:var(--ink)}
+.gs b{display:block;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--graphite);margin-bottom:1px}
+.g2{display:grid;grid-template-columns:minmax(260px,1fr) minmax(0,2fr);gap:14px}
+@media (max-width:860px){.g2{grid-template-columns:1fr}}
+.gcard{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;display:flex;flex-direction:column;gap:10px}
+.gcard h3{font-size:18px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;font-size:13.5px}
+.kv dt{color:var(--muted);font-weight:600}
+.kv dd{margin:0}
+.split{display:flex;height:26px;border-radius:6px;overflow:hidden;background:var(--paper)}
+.split i{display:flex;align-items:center;justify-content:center;font-style:normal;font-size:11.5px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
+.sp-g{background:var(--ok)}.sp-e{background:var(--orange)}.sp-a{background:#9a8f80}.sp-r{background:var(--no)}
+.splitleg{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted)}
+.splitleg span::before{content:"";display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px;background:var(--c)}
+.gap3{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.gap3 div{background:var(--paper);border-radius:8px;padding:10px 12px;font-size:12.5px;color:var(--muted)}
+.gap3 b{display:block;font-size:18px;color:var(--ink)}
+.tops{display:flex;flex-direction:column;gap:7px}
+.trow{display:grid;grid-template-columns:minmax(0,1fr) 180px 52px;gap:10px;align-items:center;font-size:13px}
+.tbar{height:12px;background:var(--paper);border-radius:3px;overflow:hidden}.tbar i{display:block;height:100%;background:var(--vc)}
+.tnum{font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.ggrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px}
+.gitem{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:13.5px;display:flex;flex-direction:column;gap:4px}
+.gitem b{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--orange)}
+.cstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px}
+.cstat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.cstat b{display:block;font-size:30px;font-weight:800;color:var(--orange);line-height:1.1}
+.cstat span{font-size:13px;color:var(--muted)}
+.alist{display:flex;flex-direction:column;gap:6px}
+.arow{display:grid;grid-template-columns:200px minmax(0,1fr) 56px;gap:10px;align-items:center;font-size:13.5px}
+.abar{height:16px;background:var(--paper);border-radius:3px;overflow:hidden}.abar i{display:block;height:100%;background:var(--vc)}
+.lei{display:flex;flex-direction:column;gap:8px;margin:0;padding-left:20px;font-size:14px}
+[hidden]{display:none!important}
+.mtabs{display:flex;flex-wrap:wrap;gap:6px;margin-left:auto;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px}
+.mtab{font:700 14px var(--font);padding:8px 16px;border-radius:999px;border:0;background:transparent;color:var(--graphite);cursor:pointer}
+.mtab[aria-pressed="true"]{background:var(--graphite);color:#fff}
+.mtab:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+.mnote{margin-top:22px;background:var(--graphite);color:#fff;border-radius:12px;padding:16px 20px;display:flex;flex-direction:column;gap:4px}
+.mnote b{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--orange)}
+.mnote span{font-size:15px;max-width:90ch}
+.muted{color:var(--muted);font-style:italic;font-size:13px}
+.eqm{font-size:13.5px}
+.cmp{display:grid;grid-template-columns:200px repeat(3,minmax(0,1fr));min-width:640px}
+.cmp > div{padding:10px 12px;border-bottom:1px solid var(--line);font-size:13.5px;font-variant-numeric:tabular-nums}
+.cmp .hd{background:var(--paper);font-weight:700;font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+.cmp .me{background:#fff7f2;font-weight:700}
+.cmp .lb{font-weight:600;color:var(--graphite)}
+.cls{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.cl{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;display:flex;flex-direction:column;gap:6px}
+.cl h4{margin:0;font-size:14.5px;display:flex;justify-content:space-between;gap:8px}
+.cl h4 small{font-weight:400;color:var(--muted);font-size:12.5px}
+.cl ol{margin:0;padding-left:20px;font-size:12.8px;display:flex;flex-direction:column;gap:2px;max-height:320px;overflow:auto}
+.cl ol li span{float:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.model{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media (max-width:860px){.model{grid-template-columns:1fr}}
+.mod{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;display:flex;flex-direction:column;gap:6px;font-size:13.5px}
+.mod b.big{font-size:26px;color:var(--orange)}
+.mod h4{margin:0;font-size:15px}
 footer{margin-top:40px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 a:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
 @media (max-width:760px){.cover{grid-template-columns:1fr}.cover-l h1{font-size:30px}.sec-head h2{font-size:23px}}
@@ -194,22 +252,23 @@ a:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
     <div class="legend"><strong style="color:var(--ink)">Leitura de cada relato:</strong>
       <span class="st st-ok">Funciona</span><span class="st st-part">Parcial ou informal</span><span class="st st-no">Não existe</span><span class="st st-na">Não relatado</span>
     </div>
-    <div class="src"><strong style="color:var(--ink)">Fontes em cada célula:</strong><span>texto principal = liderança</span><span class="eq" style="margin:0;padding:2px 8px"><b style="display:inline;margin-right:6px">Equipe</b>o que a equipe trouxe</span></div>
+    <div class="src"><strong style="color:var(--ink)">Três visões por vertical:</strong><span>time (questionário da equipe)</span><span>· gestor (entrevista e questionário)</span><span>· receita (curva ABC)</span></div>
     <div class="legend"><strong style="color:var(--ink)">Status no material:</strong>
       <span class="deck deck-def">Definido</span><span class="deck deck-diag">A diagnosticar</span><span class="deck deck-dec">A decidir</span>
     </div>
-    <nav aria-label="Seções"><a href="#decisoes">Diretoria</a><a href="#equipe">Visão da equipe</a><a href="#pessoas">1 · Pessoas</a><a href="#processos">2 · Processos</a><a href="#tecnologia">3 · Tecnologia</a><a href="#governanca">Governança</a><a href="#scan">Checklist do Business Scan</a><a href="#perguntas">Perguntas</a></nav>
+    <nav aria-label="Seções"><a href="#decisoes">Diretoria</a><a href="#equipe">Visão da equipe</a><a href="#gestor">Visão do gestor</a><a href="#carteira">Carteira</a><a href="#pessoas">1 · Pessoas</a><a href="#processos">2 · Processos</a><a href="#tecnologia">3 · Tecnologia</a><a href="#governanca">Governança</a><a href="#scan">Checklist do Business Scan</a><a href="#perguntas">Perguntas</a></nav>
   </div>
 </div>
 
-<div class="vbar" role="tablist" aria-label="Escolha a vertical"><span>Ver o scan de</span><button type="button" class="vtab H" style="--vc:var(--health)" data-v="H" aria-pressed="false">Health</button><button type="button" class="vtab R" style="--vc:var(--risk)" data-v="R" aria-pressed="false">Risk</button><button type="button" class="vtab A" style="--vc:var(--affinity)" data-v="A" aria-pressed="false">Affinity</button></div>
+<div class="vbar" role="tablist" aria-label="Escolha a vertical"><span>Ver o scan de</span><button type="button" class="vtab H" style="--vc:var(--health)" data-v="H" aria-pressed="false">Health</button><button type="button" class="vtab R" style="--vc:var(--risk)" data-v="R" aria-pressed="false">Risk</button><button type="button" class="vtab A" style="--vc:var(--affinity)" data-v="A" aria-pressed="false">Affinity</button><div class="mtabs" role="tablist" aria-label="Escolha a visão"><button type="button" class="mtab" data-m="time" aria-pressed="false">Visão do time</button><button type="button" class="mtab" data-m="gestor" aria-pressed="false">Visão do gestor</button><button type="button" class="mtab" data-m="receita" aria-pressed="false">Visão da receita</button></div></div>
+<div class="mnote" id="mnote"></div>
 
-<section id="decisoes">
+<section id="decisoes" data-m="gestor">
   <div class="sec-head"><div class="eyebrow">Atualização · 16/11/2026</div><h2>O que a diretoria já respondeu</h2><p>Respostas do Leo às perguntas da primeira versão. Os selos seguem o material: definido, a decidir ou a levantar com os gerentes.</p></div>
   <div class="dec-grid" id="dec"></div>
 </section>
 
-<section id="equipe">
+<section id="equipe" data-m="time">
   <div class="sec-head"><div class="eyebrow">Questionário de rotina · 17 a 19/11/2026</div><h2>Visão da equipe: rotina, carga e o que ela pede</h2><p>Responderam as 9 pessoas abaixo dos gerentes. As horas da Ariane, da Thais, da Isabelly e da Milena foram ajustadas onde houve erro de preenchimento; as demais são as informadas. As horas declaradas tendem a superar a jornada, porque cada atividade é estimada isoladamente: leia a coluna como peso relativo, não como relógio.</p></div>
   <div class="block"><div class="block-h"><div class="n">C</div><h3>Capacity declarada</h3><span class="legend" style="gap:6px;font-size:12px">barra = horas de atividades por semana · traço = horário declarado (5 dias)</span></div><div class="scroll"><div class="cap" id="cap"></div></div></div>
   <div class="eyebrow" style="margin-top:6px">O que a equipe pede para automatizar</div>
@@ -218,46 +277,64 @@ a:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
   <div class="quotes" id="quotes"></div>
 </section>
 
-<section id="pessoas">
-  <div class="sec-head"><div class="eyebrow">Pilar 1 · Pessoas</div><h2>Pessoas: quem faz, como faz e com qual capacidade?</h2><p>Itens do slide 2 na primeira coluna; ao lado, o que cada liderança contou, cruzado com o organograma de novembro.</p></div>
+<section id="gestor" data-m="gestor">
+  <div class="sec-head"><div class="eyebrow">Questionário dos gestores · 24/11/2026</div><h2 id="gtitle">Visão do gestor</h2><p>Rotina, divisão do tempo e delegação, segundo o próprio gestor. As horas tiveram removida a contagem dupla de e-mail e WhatsApp, que aparecia como atividade e também na pergunta sobre mensagens.</p></div>
+  <div class="g2"><div class="gcard" id="gprof"></div><div class="gcard" id="gtime"></div></div>
+  <div class="gcard" id="gtop"></div>
+  <div class="ggrid" id="gq"></div>
+</section>
+
+<section id="carteira" data-m="receita">
+  <div class="sec-head"><div class="eyebrow">Curva ABC da carteira · nov/2026</div><h2 id="ctitle">Carteira</h2><p>Participação de cada cliente na receita anual. Classe A = clientes que, somados do maior para o menor, chegam a 80% da receita da vertical; B até 95%; C o restante. A base não traz valores em R$.</p></div>
+  <div class="cstats" id="cstats"></div>
+  <div class="g2"><div class="gcard" id="cA"></div><div class="gcard" id="cread"></div></div>
+  <div class="gcard"><h3>Comparação entre as verticais</h3><div style="font-size:13px;color:var(--muted)">A coluna destacada é a vertical selecionada. Pessoas = gestor + time operacional.</div><div class="scroll"><div class="cmp" id="ccomp"></div></div></div>
+  <div class="eyebrow" style="margin-top:6px">Modelo de atendimento sugerido pela curva</div>
+  <div class="model" id="cmodel"></div>
+  <div class="eyebrow" style="margin-top:6px">Todos os clientes da vertical</div>
+  <div class="cls" id="cfull"></div>
+</section>
+
+<section id="pessoas" data-m="time gestor">
+  <div class="sec-head"><div class="eyebrow">Pilar 1 · Pessoas</div><h2>Pessoas: quem faz, como faz e com qual capacidade?</h2><p>Itens do slide 2 na primeira coluna; ao lado, o relato da visão selecionada (time ou gestor), cruzado com o organograma de novembro.</p></div>
   <div id="p1"></div>
 </section>
 
-<section id="processos">
+<section id="processos" data-m="time gestor">
   <div class="sec-head"><div class="eyebrow">Pilar 2 · Processos</div><h2>Processos: uma jornada estruturada, do fechamento à expansão</h2><p>Para cada etapa: o relato de cada vertical e as tecnologias usadas nela. O Placement entra antes da etapa 1 porque concentrou boa parte das conversas.</p></div>
   <div class="block"><div class="scroll"><div class="journey" id="jline"></div></div></div>
   <div class="block"><div class="block-h"><div class="n">J</div><h3>Jornada por etapa</h3><span class="deck deck-diag">A diagnosticar</span></div><div class="scroll"><div class="dp" id="p2"></div></div></div>
   <div class="block"><div class="block-h"><div class="n">D</div><h3>Dimensões de cada etapa</h3><span class="deck deck-diag">A diagnosticar</span></div><div class="scroll"><div class="dp" id="p2d"></div></div></div>
 </section>
 
-<section id="tecnologia">
+<section id="tecnologia" data-m="time gestor">
   <div class="sec-head"><div class="eyebrow">Pilar 3 · Tecnologia</div><h2>Tecnologia: o que se usa hoje e onde entra na jornada</h2><p>Primeiro, as quatro camadas do slide 4 comparadas com os relatos. Depois, cada ferramenta citada posicionada nas etapas em que aparece, por vertical.</p></div>
   <div class="block"><div class="block-h"><div class="n">T</div><h3>Camadas de tecnologia</h3><span class="deck deck-diag">A diagnosticar</span></div><div class="scroll"><div class="dp" id="p3"></div></div></div>
   <div class="block"><div class="block-h"><div class="n">M</div><h3>Ferramentas × etapas da jornada</h3><span class="legend" style="gap:6px"><span class="vb R">R</span>Risk <span class="vb H">H</span>Health <span class="vb A">A</span>Affinity</span></div><div class="scroll"><div class="tm" id="tm"></div></div></div>
   <div class="callout"><div class="n">!</div><p>O <b>SIGA Hub de Apólices</b>, que a apresentação marca como "a avaliar", não foi citado por nenhuma liderança. Em Risk, quem guarda os dados de apólice é o Quiver. O único painel oficial hoje é o dashboard de Placement no Pipedrive (Insights). Em Health e Affinity, nenhum sistema de apólices foi mencionado.</p></div>
 </section>
 
-<section id="governanca">
+<section id="governanca" data-m="time gestor">
   <div class="sec-head"><div class="eyebrow">Governança transversal</div><h2>Indicadores, SLAs, ritos, responsáveis e melhoria contínua</h2></div>
   <div class="block"><div class="scroll"><div class="dp" id="gov"></div></div></div>
 </section>
 
-<section id="scan">
+<section id="scan" data-m="gestor">
   <div class="sec-head"><div class="eyebrow">Business Scan · slide 5</div><h2>O que já temos para o diagnóstico</h2><p>O que a apresentação pede para mapear, comparado com o que as entrevistas entregaram. O que falta vira pedido de dado ou pauta da conversa com a equipe.</p></div>
   <div class="legend"><span class="ico i-ok">✓</span>Coletado <span class="ico i-part">½</span>Parcial <span class="ico i-no">–</span>Falta</div>
   <div class="block"><div class="scroll"><div class="ck" id="ck"></div></div></div>
 </section>
 
-<section id="perguntas">
+<section id="perguntas" data-m="gestor">
   <div class="sec-head"><div class="eyebrow">Próximo passo</div><h2>Perguntas: respondidas e pendentes</h2></div>
   <div class="qgrid" id="qs"></div>
 </section>
 
-<footer><span>Ô INSURANCE · MÁQUINA DE GOVERNANÇA OPERACIONAL · USO INTERNO</span><span>Fontes: questionário Rotina e Capacity Operacional (9 respostas, 17 a 19/11/2026), anotações das reuniões "Processo Operacional" (13/11/2026), Máquina de Governança Operacional e Estrutura Operacional Ô (nov/2026). Assegurou fora do escopo.</span></footer>
+<footer><span>Ô INSURANCE · MÁQUINA DE GOVERNANÇA OPERACIONAL · USO INTERNO</span><span>Fontes: questionário Rotina e Capacity Gestores (24/11/2026), curva ABC da carteira (nov/2026), questionário Rotina e Capacity Operacional (9 respostas, 17 a 19/11/2026), anotações das reuniões "Processo Operacional" (13/11/2026), Máquina de Governança Operacional e Estrutura Operacional Ô (nov/2026). Assegurou fora do escopo.</span></footer>
 </div>
 
 <script>
-let VF = "H";
+let VF = "H", VM = "time";
 function build(){
 const VSALL = [
   {k:"R", name:"Risk", sub:"Paula Pocai · 3 pessoas", c:"var(--risk)"},
@@ -266,22 +343,26 @@ const VSALL = [
 ];
 const VS = VSALL.filter(v=>v.k===VF);
 const VNAME = VS[0].name;
+const VC0 = {R:"var(--risk)",H:"var(--health)",A:"var(--affinity)"};
 const PEOPLE = {R:["Marcus","Mariana","Paula","Mari"],H:["Thais","Claudio","Ariane","Silvia","Isabelly","Murilo"],A:["Willams","Milena","Flávia","Will"]};
 const FIND = {
  R:[["Sem dono definido","A demanda vai para quem está livre e a Paula aprova tudo de forma implícita. O Marcus faz \"as vezes de comercial, de backoffice, de operacional\"."],
     ["Atuação reativa","As renovações viram urgência. A Mariana começa 60 dias antes e o Marcus percebe o atraso a menos de 10 dias: não há processo comum."],
     ["Cotar e cobrar consome a semana","Dezenas de portais, 25 h por semana cobrando retornos (Mariana) e o mesmo dado lançado no Quiver, na planilha, no Pipedrive e no Segarante."],
     ["Passagem sem regra","O comercial fica com a conta por 1 ano num acordo informal, e a informação chega incompleta do comercial e das seguradoras."],
-    ["Soluções por conta própria","Sem BI oficial, a Mariana montou controles e painéis no Claude, e o Marcus usa IAs gratuitas com dados de trabalho."]],
+    ["A gerente opera e quase não gere","Só 11% do tempo da Paula vai para gestão. Ela revisa praticamente tudo, é interrompida de 11 a 20 vezes por dia e quer chegar a 60% a 80% em gestão."],
+    ["Muito esforço para pouca receita registrada","55 clientes para 2,4% da receita anual da Ô, cerca de 18 a 23 por pessoa num processo manual. Gafor e Banco RCI, em renovação, ainda não estão nessa conta."]],
  H:[["A jornada mais completa","Placement por porte, implantação de 30 a 60 dias, renovação 3 a 4 meses antes e o Status de Placement semanal com prazos."],
     ["O gestor concentra","O Murilo aprova todas as etapas e faz o relacionamento; o Placement também implanta; o Claudio atua como coordenador sem estar no organograma."],
     ["Pós-venda no WhatsApp","O RH aciona o dia todo, o histórico fica no e-mail pessoal e a Silvia declara 30 h de retrabalho por semana; ela propõe um sistema de chamados."],
     ["Carga mal distribuída","No mesmo cargo, a Ariane dá carga 5 e a Isabelly, 3. A Silvia também dá carga 5, e a Thais estende o dia para manter a qualidade."],
-    ["Pedidos claros de automação","Busca de rede credenciada e comparativo (Thais, Claudio) e conferência do faturamento (Ariane, Silvia)."]],
- A:[["Tudo passa pela Flávia","Ela cota, formaliza contratos, faz a interlocução da API e o relacionamento: é quem executa e aprova em 5 de 9 atividades."],
+    ["O gestor é o gargalo","Só 17% do tempo do Murilo vai para gestão. São cerca de 42 h por semana em reuniões, negociações e escalados, e ele pede um coordenador."],
+    ["6 contas fazem 86% da vertical","Alper, Raiz, Quality, Kainos, Gafor e Mundial, todas com o Murilo. Os 20 clientes C somam 2,1% da receita da Ô."]],
+ A:[["A cotação ainda passa pela Flávia","Ela cota (inclusive frota, produto de Affinity), formaliza contratos e faz a interlocução da API. Se frota crescer, vai precisar de uma pessoa dedicada."],
     ["Cotação lenta e manual","Disparo por e-mail e até 15 dias de retorno das seguradoras, com follow-up e correção de propostas à mão."],
     ["Controle em planilhas e Teleport","Os dados dos consultores no Teleport não batem com planilhas e portais, e os portais da Porto e da HDI têm erros e lentidão."],
-    ["Atendimento no WhatsApp","Para a Milena, o atendimento constante no WhatsApp é o que mais toma tempo e menos gera valor."],
+    ["Gestão de verdade","57% do tempo da Flávia já vai para gestão, com daily, SLA medido em sinistros e no GP1, e a área segue sem ela."],
+    ["Concentração de receita","4 contas, todas com a Flávia, fazem 85% da vertical e 45% da receita da Ô. Perder uma muda o resultado da empresa."],
     ["Lacunas a levantar","Renovação e reajuste não foram mapeados. A Milena respondeu com o cargo de Operações, mas atua em Sinistros. Com as horas corrigidas, ela fica em cerca de 22 h por semana de atividades, abaixo da jornada."]]
 };
 document.body.classList.add("one");
@@ -291,14 +372,25 @@ const LEDE = {R:"Cada item da Máquina de Governança Operacional comparado com 
 document.getElementById("vlede").textContent = LEDE[VF];
 document.getElementById("findings").innerHTML = FIND[VF].map(f=>`<div class="finding"><b>${f[0]}</b>${f[1]}</div>`).join("");
 document.querySelectorAll(".vtab").forEach(b=>b.setAttribute("aria-pressed", b.dataset.v===VF));
+document.querySelectorAll(".mtab").forEach(b=>b.setAttribute("aria-pressed", b.dataset.m===VM));
+document.querySelectorAll("section[data-m]").forEach(s=>{ s.hidden = !s.dataset.m.split(" ").includes(VM); });
+document.querySelectorAll('nav[aria-label="Seções"] a').forEach(a=>{ const s = document.getElementById(a.getAttribute("href").slice(1)); a.hidden = !!(s && s.hidden); });
+const MN = {
+ time:["Visão do time","O que as pessoas da operação de " + VNAME + " relataram no questionário de rotina e capacity: carga, pedidos, frases e, em cada item dos pilares, o relato da equipe."],
+ gestor:["Visão do gestor","O que o gestor de " + VNAME + " relatou na entrevista (13/11) e no questionário dos gestores (24/11): divisão do tempo, delegação, RACI deduzida, decisões e perguntas em aberto."],
+ receita:["Visão da receita","De onde vem a receita de " + VNAME + " pela curva ABC, como ela se compara às outras verticais e o modelo de atendimento que a carteira sugere."]
+};
+document.getElementById("mnote").innerHTML = `<b>${MN[VM][0]} · ${VNAME}</b><span>${MN[VM][1]}</span>`;
 const ST = {ok:["st-ok","Funciona"], part:["st-part","Parcial ou informal"], no:["st-no","Não existe"], na:["st-na","Não relatado"]};
 const TC = {"E-mail":"#8a8f98","WhatsApp":"#25a244","Pipedrive":"#1a1a1a","Portais das seguradoras":"#fe652a","Planilhas":"#1f8f4e","Quiver":"#6b4fbf","Power BI":"#e2b100","IA (Claude, ChatGPT e outras)":"#c96442","Teleport":"#7a5cc4","Segarante":"#b0563a","Ô 360":"#fe652a","Sistemas do cliente (TOTVS, APDATA)":"#5b7fa6","Pasta na rede":"#9a8f80","Ferramenta CART":"#a0a0a0","API ÔnTech":"#2b9be0","Gestão médica (parceiro)":"#3fae49","Relatórios de sinistralidade":"#7aa83c","Formulários das seguradoras":"#c47a3a"};
 const tchip = arr => arr && arr.length ? `<div class="techs">${arr.map(t=>`<span class="t" style="--tc:${TC[t]||'#999'}">${t}</span>`).join("")}</div>` : "";
 const cell = c => `<div><span class="st ${ST[c[0]][0]}">${ST[c[0]][1]}</span><span>${c[1]}</span>${tchip(c[2])}</div>`;
 function header(first){ return `<div class="hd">${first}</div>` + VS.map(v=>`<div class="hd v" style="--vc:${v.c}">${v.name}<span>${v.sub}</span></div>`).join(""); }
 const VK = ["R","H","A"];
-function cellT(c,label,vi){ const t = (TEAM[label]||{})[VK[vi]]; const o = (TEAMST[label]||{})[VK[vi]]; const cc = o? [o, c[1], c[2]] : c;
-  return `<div><span class="st ${ST[cc[0]][0]}">${ST[cc[0]][1]}</span><span>${cc[1]}</span>${tchip(cc[2])}${t?`<div class="eq"><b>Equipe</b>${t}</div>`:""}</div>`; }
+function cellT(c,label,vi){ const t = (TEAM[label]||{})[VK[vi]]; const g = (GEST[label]||{})[VK[vi]];
+  if(VM==="time"){ const ot = (TEAMST[label]||{})[VK[vi]]; return t ? `<div>${ot?`<span class="st ${ST[ot][0]}">${ST[ot][1]}</span>`:""}<span class="eqm">${t}</span></div>` : `<div><span class="muted">A equipe não trouxe relato sobre este item.</span></div>`; }
+  const o = (GESTST[label]||{})[VK[vi]]; const cc = o? [o, c[1], c[2]] : c;
+  return `<div><span class="st ${ST[cc[0]][0]}">${ST[cc[0]][1]}</span><span>${cc[1]}</span>${tchip(cc[2])}${g?`<div class="gs"><b>Questionário do gestor</b>${g}</div>`:""}</div>`; }
 function rows(list){ return list.map((r,i)=>`<div class="item">${r[0]}${r[1]?`<small>${r[1]}</small>`:""}</div>` + [r[2],r[3],r[4]].map((c,vi)=>VK[vi]===VF?cellT(c,r[0],vi):"").join("")).join(""); }
 
 
@@ -439,6 +531,87 @@ const QUOTES = [
 ];
 document.getElementById("quotes").innerHTML = QUOTES.map(q=>[q[0],q[1],q[2].filter(x=>x[1].includes(VNAME))]).filter(q=>q[2].length).map(q=>`<article class="qt" style="--vc:${q[1]}"><h3>${q[0]}</h3>${q[2].map(x=>`<blockquote>${x[0]}<cite>${x[1]}</cite></blockquote>`).join("")}</article>`).join("");
 
+
+/* ---------- VISÃO DO GESTOR (questionário 24/11) ---------- */
+const GEST = {
+ "Capacidade produtiva":{R:"Paula: 80 h de atividades (ajustado) e 11 a 20 interrupções do time por dia. Vê sobrecarga na maior parte do time.",H:"Murilo: 89 h (ajustado) e hora extra quase todo dia. Vê sobrecarga em uma ou duas pessoas.",A:"Flávia: 51 h (ajustado). Vê folga em uma ou duas pessoas."},
+ "Distribuição de carteiras":{R:"Paula distribui caso a caso e diz atender 70 clientes. Na curva ABC: 55 clientes, cerca de 18 por pessoa.",H:"Carteira fixa de clientes por pessoa. O Murilo diz atender 35 clientes; na curva ABC são 31, e as 6 contas A estão com ele.",A:"Distribuição mista. A Flávia diz atender 12 clientes; na curva ABC são 8, e as 4 contas A estão com ela."},
+ "Necessidades futuras de contratação":{R:"Paula: 1 pessoa, um assistente e cotador multiprodutos e multisseguradoras.",H:"Murilo: 1 coordenador, que faça relacionamento e estratégia junto com ele.",A:"Flávia: não de gente, mas de processo e sistema. Frota precisaria de uma pessoa dedicada se crescer."},
+ "Matriz de responsabilidades (RACI)":{R:"A Paula não consegue delegar: faltam confiança na qualidade, pessoa preparada, processo documentado e acesso a sistema.",H:"O Murilo delega em parte; falta pessoa preparada no time.",A:"A Flávia delega em parte e diz que já delega o que dá."},
+ "Indicadores por função e produtividade":{R:"A Paula não sabe como é avaliada.",H:"O Murilo sabe mais ou menos como é avaliado.",A:"A Flávia sabe mais ou menos como é avaliada."},
+ "Qualidade das entregas":{R:"A Paula revisa praticamente tudo o que o time faz.",H:"O Murilo revisa só exceções e casos críticos.",A:"A Flávia revisa só exceções e casos críticos."},
+ "Desenvolvimento contínuo":{R:"A Paula deixa de desenvolver o time e a própria liderança por falta de tempo.",H:"O Murilo deixa de lado a parte estratégica, o alinhamento de metas e o desenvolvimento de novas soluções."},
+ "1 · Passagem do Comercial":{R:"A informação incompleta vem das seguradoras, do comercial e do próprio time.",H:"Murilo: 60% da informação incompleta vem das seguradoras, 30% do time, que é novo, e 10% do cliente.",A:"Flávia: nas cotações, quase sempre faltam informações complementares de clientes, comercial e parceiros."},
+ "7 · Venda cruzada":{R:"Paula: há boas oportunidades e o Marcus tem perfil, mas passa o tempo indo de portal em portal.",H:"Murilo: \"temos um tesouro com os clientes\", com muitas oportunidades de novos negócios.",A:"Flávia: sempre há receita nova nos clientes implantados, mas o fechamento com clientes e parceiros é demorado."},
+ "SLAs":{R:"Paula: SLA indicativo, difícil de sustentar e não medido.",H:"Murilo: até 24 h para o primeiro atendimento, mas sem medição. Ele só sabe do atraso quando o cliente reclama.",A:"Flávia: SLA para sinistros e para o GP1, medido nos acompanhamentos diários."},
+ "Ritos":{R:"Reunião semanal de equipe, mas sem rito fixo.",H:"Reunião semanal de equipe. O Murilo tem 11 reuniões por semana.",A:"Daily com a equipe."},
+ "Indicadores":{R:"A Paula acompanha por painel automático (Power BI, sistema).",H:"Planilha atualizada à mão.",A:"Planilha atualizada à mão."},
+ "Continuidade (risco)":{R:"A área segue sem a Paula só em parte, e com muito desgaste.",H:"Em parte: faltaria alguém como ponto focal de relacionamento.",A:"Sim: as atribuições são repassadas para outra pessoa."},
+ "1 · Sistemas":{R:"Paula: IA (Claude pago por ela), Pipedrive, e-mail e WhatsApp. A planilha é o que mais atrapalha.",H:"Murilo: portais, planilhas, pasta na rede, Power BI, e-mail e Teams. O problema é a falta de ferramenta: tudo é manual.",A:"Flávia: Pipedrive, Quiver, portais, planilhas, Teams, o Teleport do GP1 e ChatGPT."},
+ "3 · Automação":{R:"Paula: cotações automáticas e simultâneas nas seguradoras.",H:"Murilo: todo o operacional de Placement, Implantação e Pós-venda.",A:"Flávia: fechamentos com as seguradoras, como o envio de bases."}
+};
+const GESTST = {"Indicadores":{R:"part"},"Ritos":{R:"part",H:"part",A:"ok"}};
+
+const GM = {
+ R:{f:true,nome:"Paula Pocai",area:"Placement e back office de Risk",tempo:"6 a 12 meses",time:"2 pessoas (Marcus e Mariana)",clientes:"70 declarados · 55 na curva ABC",horas:79.7,orig:96.3,horario:"7h20 às 19h20 (cerca de 60 h)",carga:3,extra:"Raramente",split:[9.0,57.9,7.8,5.0],perc:"Até 20%",ideal:"60% a 80%",deleg:96,
+  top:[["Executar tarefas operacionais do time (cotar, emitir, conciliar)",20],["Revisar ou aprovar o trabalho do time",15],["Resolver casos escalados e problemas críticos",7.5],["Distribuir demandas e acompanhar o time",5],["Atualizar Pipedrive, controles e cadastros",3.75],["Negociar com seguradoras",3.5]],
+  ritmo:"11 a 20 interrupções do time por dia · 4 a 10 escalonamentos por semana · mais de 3 h por dia em e-mail e WhatsApp",
+  q:[["Só ela faz","Visão de negócio e da esteira do processo, buscar alternativas. O time está tão tomado por etapas manuais que não consegue ampliar a visão."],["O que falta para delegar","Confiança na qualidade da entrega, pessoa preparada, processo documentado e acesso a sistema."],["Contratação","1 pessoa: assistente e cotador multiprodutos e multisseguradoras."],["O que deixa de fazer","Desenvolver o time, a própria liderança e o olhar estratégico."],["Mais tempo, menos valor","Ficar acompanhando se o time respondeu."],["Para crescer","Tarefas menos manuais, para o time ganhar visão, autonomia e tempo para cross-sell e up-sell."],["Receita","\"O perfil do Marcus é bacana para essa função, porém a maior parte do tempo ele está indo de portal em portal.\""],["Ferramenta pessoal","Claude, pago por ela."]]},
+ H:{nome:"Murilo Henrique",area:"Placement, Implantação e Pós-venda (relacionamento, operação e gestão médica)",tempo:"1 a 3 anos",time:"5 pessoas",clientes:"35 declarados · 31 na curva ABC",horas:89.1,orig:95.4,horario:"7h às 17h (cerca de 50 h)",carga:4,extra:"Quase todo dia",split:[14.85,64.0,9.5,0.75],perc:"Até 20%",ideal:"60% a 80%",deleg:98,
+  top:[["Reuniões estratégicas com clientes, parceiros e operadoras",15],["Negociar com operadoras (taxas, renovações, pendências)",15],["Resolver casos escalados e problemas críticos",15],["Atender clientes e RH diretamente",12.5],["Reunião diária de equipe",5],["Recrutar e integrar pessoas",5],["Acompanhar sinistralidade e reajustes",5],["Executar tarefas operacionais",5]],
+  ritmo:"11 reuniões por semana · 3 a 5 interrupções do time por dia · 2 a 3 h por dia em e-mail e WhatsApp",
+  q:[["Só ele faz","Negociações estratégicas com operadoras e clientes, relacionamento e gestão médica."],["O que falta para delegar","Pessoa preparada no time."],["Contratação","1 coordenador, que execute relacionamento e estratégia junto com ele."],["O que deixa de fazer","Parte estratégica, alinhamento de metas, novas soluções e negociações."],["Mais tempo, menos valor","O operacional."],["Para crescer","Sistema e mais um braço para a gestão, um coordenador."],["Receita","\"Temos um tesouro com os clientes, temos muitas oportunidades de novos negócios.\""],["Ferramenta pessoal","Claude."]]},
+ A:{f:true,nome:"Flávia Gonçalves",area:"Pós-venda de Affinity, incluindo as cotações de frota",tempo:"1 a 3 anos",time:"2 pessoas (Williams e Milena)",clientes:"12 declarados · 8 na curva ABC",horas:50.7,orig:54.5,horario:"9h às 19h (cerca de 50 h)",carga:3,extra:"Quase todo dia",split:[28.67,20.33,1.25,0.47],perc:"60% a 80%",ideal:"Mais de 80%",deleg:58,
+  top:[["Reuniões estratégicas com clientes, parceiros e seguradoras",10],["Planejar e priorizar as demandas",7.5],["Executar tarefas operacionais (cotações de frota)",5],["Acompanhar indicadores, metas e prazos",5],["Atender clientes e parceiros diretamente",4.2],["Distribuir demandas e acompanhar o time",3.75]],
+  ritmo:"10 reuniões por semana · 3 a 5 interrupções do time por dia · 4 a 10 escalonamentos por semana",
+  q:[["Delegação","Já delega o que dá. As cotações de frota são dela e, com crescimento, precisariam de uma pessoa dedicada."],["Contratação","Não de gente, mas de processo e sistema."],["O que deixa de fazer","Nada por falta de tempo; em dias de pico, o acompanhamento de SLA fica para o dia seguinte."],["Mais tempo, menos valor","As negociações com as seguradoras, incluindo montar o processo de cotação."],["Automatizaria","Fechamentos com as seguradoras, como o envio de bases."],["Para crescer","Uma área comercial sempre atuante; a área está sendo reestruturada."],["Receita","Sempre há receita nova nos clientes implantados, mas o fechamento é demorado."],["Ferramenta pessoal","ChatGPT, para padronizar, organizar apresentações e comparar planilhas."]]}
+};
+{
+  const g = GM[VF]; const vc = VC0[VF];
+  document.getElementById("gtitle").textContent = "Visão do gestor: " + g.nome;
+  document.getElementById("gprof").innerHTML = `<h3>${g.nome}</h3><dl class="kv"><dt>Área</dt><dd>${g.area}</dd><dt>No cargo</dt><dd>${g.tempo}</dd><dt>Time</dt><dd>${g.time}</dd><dt>Clientes</dt><dd>${g.clientes}</dd><dt>Horário</dt><dd>${g.horario}</dd><dt>Carga</dt><dd>${g.carga} de 5 · hora extra: ${g.extra}</dd><dt>Ritmo</dt><dd>${g.ritmo}</dd></dl>`;
+  const tot = g.split.reduce((a,b)=>a+b,0); const pc = g.split.map(x=>Math.round(x/tot*100));
+  const lab = ["Gestão","Execução operacional","Apoio e administrativo","Refazer ou corrigir"], cls=["sp-g","sp-e","sp-a","sp-r"], cols=["var(--ok)","var(--orange)","#9a8f80","var(--no)"];
+  document.getElementById("gtime").innerHTML = `<h3>Para onde vai o tempo</h3>
+   <div style="font-size:13px;color:var(--muted)">${String(g.horas).replace(".",",")} h por semana de atividades (ajustado; ${String(g.orig).replace(".",",")} h declaradas)</div>
+   <div class="split">${pc.map((x,i)=>x>0?`<i class="${cls[i]}" style="width:${x}%" title="${lab[i]}: ${x}%">${x>=6?x+"%":""}</i>`:"").join("")}</div>
+   <div class="splitleg">${lab.map((l,i)=>`<span style="--c:${cols[i]}">${l} ${pc[i]}%</span>`).join("")}</div>
+   <div class="gap3"><div><b>${pc[0]}%</b>em gestão hoje, pelas atividades</div><div><b>${g.perc}</b>em gestão, pela percepção ${g.f?"da gestora":"do gestor"}</div><div><b>${g.ideal}</b>é o ideal para ${g.f?"ela":"ele"}</div></div>
+   <div style="font-size:13px">${g.f?"A própria gestora":"O próprio gestor"} marca <b>${g.deleg}%</b> das horas como delegáveis, já ou se preparar alguém.</div>`;
+  const mx = Math.max(...g.top.map(t=>t[1]));
+  document.getElementById("gtop").innerHTML = `<h3>As atividades que mais consomem tempo</h3><div class="tops" style="--vc:${vc}">${g.top.map(t=>`<div class="trow"><span>${t[0]}</span><span class="tbar"><i style="width:${t[1]/mx*100}%"></i></span><span class="tnum">${String(t[1]).replace(".",",")} h</span></div>`).join("")}</div>`;
+  document.getElementById("gq").innerHTML = g.q.map(x=>`<div class="gitem"><b>${x[0]}</b><span>${x[1]}</span></div>`).join("");
+}
+
+/* ---------- CARTEIRA (curva ABC) ---------- */
+const ABCL = {"A": [["Mobilize", "A", 28.14], ["Keeta", "A", 26.73], ["Carsystem", "A", 18.76], ["Motiva", "A", 11.72], ["Grupo Gafor", "B", 7.21], ["Gp1", "B", 5.86], ["Grupo Dória", "C", 1.15], ["Sococo", "C", 0.44]], "H": [["Alper", "A", 26.51], ["Grupo Raiz", "A", 25.35], ["Quality", "A", 9.94], ["Grupo Kainos", "A", 9.54], ["Grupo Gafor", "A", 8.38], ["Grupo Mundial", "A", 6.03], ["Grupo Solar", "B", 3.9], ["Grupo Binário", "B", 1.69], ["Grupo Dória", "B", 1.41], ["Labi Exames", "B", 1.35], ["Sempre IT", "B", 1.15], ["Grupo GBM", "C", 1.08], ["Querodelivery", "C", 0.98], ["Oncocenter", "C", 0.79], ["Grupo Osborne", "C", 0.47], ["Neweb", "C", 0.3], ["Gili", "C", 0.14], ["Estancia Barreiro", "C", 0.13], ["Andrea", "C", 0.1], ["Ô Tech", "C", 0.1], ["Inimigos", "C", 0.1], ["Deborah", "C", 0.09], ["Delta 3", "C", 0.08], ["Kabbach", "C", 0.08], ["QWS", "C", 0.07], ["Lunium", "C", 0.06], ["Harvard", "C", 0.06], ["Assegurou", "C", 0.06], ["W S De Andrade", "C", 0.05], ["Leandro", "C", 0.0], ["Gislaine", "C", 0.0]], "R": [["YPO São Paulo", "A", 12.96], ["Ricardo Strausz Jardim", "A", 10.67], ["Jota Content Ltda", "A", 7.28], ["Opex Log Ltda", "A", 7.16], ["Ad8 Empreendimentos E Participacoes Spe Ltda", "A", 5.62], ["Diston Participacoes E Construcoes Ltda", "A", 4.76], ["L I S A Logistica Integrada Sulamericana", "A", 4.16], ["Sindicato Dos Comerciarios De Sao Paulo", "A", 3.72], ["For Plas Industria De Embalagens Ltda", "A", 3.68], ["Grand Cru Importadora Ltda", "A", 3.43], ["Sirlei Maria Eduardo", "A", 3.37], ["Christiano Da Cunha Freire", "A", 3.23], ["Brasilgrafica S A Industria E Comercio", "A", 2.55], ["Condominio Do Edificio Venancio Green Building", "A", 2.15], ["3 Ps Treinamentos Ltda", "A", 1.94], ["Gabrielle Tacconi Hueses", "A", 1.92], ["Core Workplace Experts Administradora De Bens E Co", "A", 1.62], ["Ziv Galeria De Arte Ltda", "B", 1.58], ["Joao Omar Duarte", "B", 1.38], ["Sache Sache Industria De Alimentos Ltda", "B", 1.34], ["Araco Properties Ltda", "B", 1.26], ["Mercado Eletronico S/A", "B", 1.23], ["Assegurou", "B", 1.16], ["Jose Luis Magalhaes Salazar", "B", 1.06], ["Fundacao Estudar", "B", 1.0], ["Anny Mykaelly Silvestre De Oliveira", "B", 0.99], ["Mecano Pack Embalagens S/A", "B", 0.83], ["Evino Comercio De Vinhos S.A.", "B", 0.75], ["Neweb Participacoes Ltda", "B", 0.72], ["Eduardo Alessio Valente Intermediacoes De Venda De", "B", 0.71], ["Faccioli Filmes Ltda", "B", 0.68], ["Opportunity Organizacao De Leiloes Ltda", "B", 0.43], ["Foco Aluguel De Carros", "C", 0.43], ["Maria De Fatima De Brito Barbosa", "C", 0.41], ["Rs Participacoes E Investimentos Eireli", "C", 0.38], ["Doce Cabana Pousada Ltda Me", "C", 0.38], ["Jefferson Cesar Da Penha Barros", "C", 0.27], ["Juan De Morais Paulino", "C", 0.25], ["Cpquali Pesquisa Clinica Ltda", "C", 0.25], ["Bm Descomplica Servicos Administrativos, Servicos Bufe E Fornecimento De Alimentos Ltda", "C", 0.22], ["Nosso Aroma Produtos Alimenticios Ltda", "C", 0.22], ["Rml Eventos Esportivos Eireli Me", "C", 0.2], ["Gofun Eventos E Esportes Ltda", "C", 0.19], ["Igreja Batista Em Jd Nordeste", "C", 0.18], ["Maria Generosa Cancela Moreira Leite", "C", 0.17], ["57 577 530 Leonardo Bihari Me", "C", 0.16], ["Latte Design Ltda", "C", 0.15], ["Espaco Saude Dra Renata Lopes Ltda Me", "C", 0.14], ["Escola De Ensino Basico D.F.M.A. Ltda Me", "C", 0.12], ["Fenix Companhia Securitizadora De Credit", "C", 0.11], ["Orbis Inteligencia Organizacional Ltda", "C", 0.11], ["Ina - Servicos Tecnicos Ltda", "C", 0.11], ["Debora Goulart Pereira", "C", 0.1], ["Cphosp Medicina Ensino E Pesquisa Ltda", "C", 0.08], ["Edificio Residencial Aguas Do Mar", "C", 0.03]]};
+const CART = {
+ A:{stats:[["52,8%","da receita anual da Ô"],["8","clientes na curva"],["4","clientes classe A"],["85,3%","da vertical nas contas A"]],
+  A:[["Mobilize",28.1],["Keeta",26.7],["Carsystem",18.8],["Motiva",11.7]],dono:"Flávia",B:"Classe B: Grupo Gafor (7,2%) e GP1 (5,9%)",C:"Classe C: Grupo Dória (1,2%) e Sococo (0,4%)",
+  lei:["As 4 contas A, todas com a Flávia, fazem 45% da receita da Ô. É a vertical que mais gera receita por pessoa e também a mais concentrada: perder uma conta muda o resultado da empresa.","As 10 h semanais da Flávia em reuniões estratégicas estão onde a receita está, e a área segue sem ela no dia a dia.","Frota é produto de Affinity e hoje é cotada pela própria Flávia: é o ponto a estruturar se a vertical crescer.","Com 2 pessoas e folga percebida, Affinity pode absorver crescimento se ganhar o processo e o sistema que a Flávia pede."]},
+ H:{stats:[["44,8%","da receita anual da Ô"],["31","clientes na curva"],["6","clientes classe A"],["85,8%","da vertical nas contas A"]],
+  A:[["Alper",26.5],["Grupo Raiz",25.4],["Quality",9.9],["Grupo Kainos",9.5],["Grupo Gafor",8.4],["Grupo Mundial",6.0]],dono:"Murilo",B:"Classe B: 5 clientes, 9,5% da vertical (Solar, Binário, Dória, Labi e Sempre IT)",C:"Classe C: 20 clientes, 4,7% da vertical e 2,1% da Ô",
+  lei:["As 6 contas A, todas com o Murilo, fazem 38% da receita da Ô.","O Murilo gasta cerca de 42 h por semana em reuniões, negociações e escalados. Sem um coordenador, as contas A dividem o tempo dele com os 20 clientes C, que somam 2,1% da Ô.","O Gafor é a única conta A em várias verticais (Health, Affinity e a renovação em Risk): é o modelo para o \"tesouro\" de venda cruzada que o Murilo cita.","O coordenador que ele pede é o papel que a equipe já atribui, na prática, ao Claudio."]},
+ R:{stats:[["2,4%","da receita anual da Ô registrada"],["55","clientes na curva (70 declarados)"],["17","clientes classe A"],["0,31%","da Ô no maior cliente"]],
+  A:[["YPO São Paulo",13.0],["Ricardo Strausz Jardim",10.7],["Jota Content",7.3],["Opex Log",7.2],["AD8 Empreendimentos",5.6],["Diston Participações",4.8]],dono:"Paula, Marcus e Mariana",B:"Mais 11 clientes A somam 26,5% da vertical. Classe B: 15 clientes, 15,1% · Classe C: 23 clientes, 4,7%",C:"Grupo Gafor e Banco RCI estão em renovação: são clientes da base, mas ainda não entram nessa receita anual. Quando entrarem, o peso de Risk sobe.",
+  lei:["São 55 clientes para 2,4% da receita anual registrada, cerca de 18 a 23 clientes por pessoa num processo manual, portal a portal. É a vertical com mais esforço por real de receita.","A Paula gasta 73% do tempo executando e revisando, e só 11% em gestão.","As renovações do Gafor e do Banco RCI, com a Mariana, são as contas que mais pesam em Risk e merecem o atendimento das contas A da Ô.","Caminho: levar B e C para atendimento em escala e automatizar a cotação, para liberar Paula e Marcus para as renovações maiores e a venda cruzada nas contas A das outras verticais."]}
+};
+{
+  const c = CART[VF]; const vc = VC0[VF];
+  document.getElementById("ctitle").textContent = "Carteira de " + VNAME;
+  document.getElementById("cstats").innerHTML = c.stats.map(s=>`<div class="cstat"><b>${s[0]}</b><span>${s[1]}</span></div>`).join("");
+  const mx = Math.max(...c.A.map(a=>a[1]));
+  document.getElementById("cA").innerHTML = `<h3>Contas classe A</h3><div style="font-size:13px;color:var(--muted)">% da receita anual da vertical · dono: ${c.dono}</div><div class="alist" style="--vc:${vc}">${c.A.map(a=>`<div class="arow"><span>${a[0]}</span><span class="abar"><i style="width:${a[1]/mx*100}%"></i></span><span class="tnum">${String(a[1]).replace(".",",")}%</span></div>`).join("")}</div><div style="font-size:13px">${c.B}</div><div style="font-size:13px;color:var(--muted)">${c.C}</div>`;
+  document.getElementById("cread").innerHTML = `<h3>O que a carteira diz sobre a capacity</h3><ul class="lei">${c.lei.map(l=>`<li>${l}</li>`).join("")}</ul>`;
+  const CMP = [["Receita anual da Ô","2,4%*","44,8%","52,8%"],["Clientes na curva","55","31","8"],["Pessoas (gestor + time)","3","6","3"],["Receita da Ô por pessoa","0,8%","7,5%","17,6%"],["Clientes por pessoa","18","5","3"],["Contas A","17","6","4"],["Peso das contas A na vertical","80,2%","85,8%","85,3%"],["Maior cliente, em % da Ô","0,31%","11,9%","14,8%"],["Horas do gestor (ajustado)","80 h","89 h","51 h"],["Tempo do gestor em gestão","11%","17%","57%"]];
+  const order = ["R","H","A"], names = {R:"Risk",H:"Health",A:"Affinity"};
+  document.getElementById("ccomp").innerHTML = `<div class="hd">Indicador</div>` + order.map(k=>`<div class="hd${k===VF?" me":""}">${names[k]}</div>`).join("") + CMP.map(r=>`<div class="lb">${r[0]}</div>` + order.map((k,i)=>`<div class="${k===VF?"me":""}">${r[i+1]}</div>`).join("")).join("") + `<div style="grid-column:1/-1;font-size:12px;color:var(--muted);border-bottom:0">* Sem Gafor e Banco RCI, que estão em renovação e fazem parte da base.</div>`;
+  const L = ABCL[VF]; const cnt = k=>L.filter(x=>x[1]===k); const sum = k=>cnt(k).reduce((s,x)=>s+x[2],0);
+  const MD = [["A","Estratégico","Dono nomeado, plano de conta, revisões executivas e renovação antecipada."],["B","Desenvolvimento","Relacionamento estruturado, acompanhamento periódico e oportunidades de expansão."],["C","Escala","Atendimento padronizado, automação e acompanhamento orientado por eventos."]];
+  document.getElementById("cmodel").innerHTML = MD.map(m=>`<div class="mod"><b class="big">${cnt(m[0]).length} clientes</b><h4>Classe ${m[0]} · ${m[1]}</h4><span style="color:var(--muted)">${sum(m[0]).toFixed(1).replace(".",",")}% da receita de ${VNAME}</span><span>${m[2]}</span></div>`).join("");
+  document.getElementById("cfull").innerHTML = ["A","B","C"].map(k=>cnt(k).length?`<div class="cl"><h4>Classe ${k}<small>${cnt(k).length} clientes · ${sum(k).toFixed(1).replace(".",",")}%</small></h4><ol>${cnt(k).map(x=>`<li>${x[0]}<span>${x[2].toFixed(2).replace(".",",")}%</span></li>`).join("")}</ol></div>`:"").join("");
+}
+
 /* ---------- PILAR 1 · PESSOAS ---------- */
 const P1 = [
  {n:1, t:"Estrutura organizacional", d:["deck-diag","A diagnosticar"], r:[
@@ -460,15 +633,15 @@ const P1 = [
     ["part","Atendimento e sinistros têm executor claro (Williams e Milena). Cotação, contrato, API, faturamento e relacionamento têm a Flávia como R e A ao mesmo tempo."]]
  ]},
  {n:2, t:"Dimensionamento", d:["deck-diag","A diagnosticar"], r:[
-  ["Capacidade produtiva",'<span class="deck deck-lev">A levantar</span> gerentes enviam em etapa futura',
+  ["Capacidade produtiva",'<span class="deck deck-def">Base</span> questionários da equipe e dos gestores',
     ["no","Sobrecarga e falta de braços reconhecidas; a equipe atua de forma reativa."],
     ["no","Não é medida. O Murilo quer saber quantas horas cada analista dedica a cada cliente para identificar as contas rentáveis."],
     ["na","Estrutura enxuta, sem medida citada."]],
-  ["Distribuição de carteiras","",
+  ["Distribuição de carteiras",'<span class="deck deck-def">Base</span> curva ABC da carteira',
     ["part","Regra informal: o comercial fica com a conta por 1 ano (farming) antes de passá-la à operação."],
     ["part","Cada cliente recebe um executivo dedicado no pós-venda, que na maioria das vezes é o próprio Murilo."],
     ["part","O relacionamento com os clientes-chave está concentrado na Flávia."]],
-  ["Volume de demandas por função",'<span class="deck deck-lev">A levantar</span> gerentes enviam em etapa futura',
+  ["Volume de demandas por função",'<span class="deck deck-def">Base</span> volumes declarados nos questionários',
     ["na","Os tipos são conhecidos (novos, renovação, cross-sell e up-sell), mas sem volume."],
     ["na","Não quantificado."],
     ["na","Não quantificado."]],
@@ -552,7 +725,7 @@ ${RACI.filter(m=>m.v===VF).map(m=>`<div class="raci-v" style="--vc:${m.c}"><h4>$
 ${m.rows.map(r=>`<div class="act">${r[0]}</div>${r[1].map(letters).map(x=>`<div>${x}</div>`).join("")}<div class="note">${r[2]}</div>`).join("")}
 </div></div><div class="alerts">${m.alerts.map(a=>`<span><b>!</b> ${a}</span>`).join("")}</div></div>`).join("")}
 </div>`;
-document.getElementById("p1").firstElementChild.insertAdjacentHTML("afterend", raciHTML);
+if(VM==="gestor") document.getElementById("p1").firstElementChild.insertAdjacentHTML("afterend", raciHTML);
 
 /* ---------- PILAR 2 · PROCESSOS ---------- */
 const steps = [["P","Placement e cotação","antes da passagem"],["1","Passagem do Comercial"],["2","Integração do cliente"],["3","Implantação"],["4","Gestão e atendimento"],["5","Relacionamento"],["6","Renovação e retenção"],["7","Venda cruzada"]];
@@ -692,15 +865,15 @@ document.getElementById("gov").innerHTML = header("Elemento") + rows(GOV);
 
 /* ---------- CHECKLIST BUSINESS SCAN ---------- */
 const CK = [
- ["Carteira de clientes e apólices","part","no","no"],
+ ["Carteira de clientes e apólices","ok","ok","ok"],
  ["Volumes e tipos de demandas","part","part","part"],
  ["Estrutura, cargos e responsabilidades","part","part","part"],
  ["Capacidade e produtividade do time","ok","ok","ok"],
  ["Jornadas e processos existentes","part","ok","part"],
  ["Sistemas e controles utilizados","ok","ok","ok"],
- ["Indicadores e SLAs atuais","part","no","no"],
+ ["Indicadores e SLAs atuais","part","part","part"],
  ["Gargalos, riscos e retrabalho","ok","ok","ok"],
- ["Segmentação e relacionamento com clientes","no","part","part"]
+ ["Segmentação e relacionamento com clientes","part","part","part"]
 ];
 const IC = {ok:["i-ok","✓","Coletado"],part:["i-part","½","Parcial"],no:["i-no","–","Falta"]};
 document.getElementById("ck").innerHTML = `<div class="hd">Item do Business Scan</div>` + VS.map(v=>`<div class="hd v" style="--vc:${v.c}">${v.name}</div>`).join("") +
@@ -713,7 +886,7 @@ const DEC = [
  ["Escopo da remodelação","deck-def","Definido","As três verticais passam pela remodelação; não há uma vertical escolhida para o piloto."],
  ["Regra de passagem Comercial → Operações","deck-dec","A decidir","Não está definida em nenhuma vertical. Em Risk vale o acordo informal de o comercial ficar 1 ano com a conta."],
  ["Ferramentas pagas pelos colaboradores","deck-dec","A decidir","O uso de ferramentas como o Claude, pagas pelas pessoas e com dados de clientes, entra na pauta como tema prioritário."],
- ["Volumes, carteira e capacidade","deck-lev","A levantar","Os gerentes das três verticais vão enviar clientes, apólices, vidas, renovações e demandas em uma etapa futura."]
+ ["Carteira e capacidade","deck-def","Definido","A curva ABC da carteira é o norte para volume e carteira, e os questionários da equipe e dos gestores são a base de capacidade. Não vamos esperar novos levantamentos."]
 ];
 document.getElementById("dec").innerHTML = DEC.map(d=>`<article class="dec"><span class="deck ${d[1]}" style="align-self:flex-start">${d[2]}</span><h3>${d[0]}</h3><p>${d[3]}</p></article>`).join("");
 
@@ -728,18 +901,18 @@ const QS = [
   ["Ferramentas pagas pelos colaboradores com dados de clientes","dec","Vai para discussão, como tema de suma importância."],
   ["Sistema que vai sustentar a operação (Pipedrive, Quiver ou SIGA)","pend","Ainda em aberto."]]],
  ["Risk · Paula","var(--risk)",[
-  ["Clientes, apólices, renovações por mês e mix de produtos","lev","A gerente envia em etapa futura."],
+  ["Clientes e peso na receita","ok","Pela curva ABC: 55 clientes, 2,4% da receita anual registrada, 17 em classe A. Gafor e Banco RCI em renovação."],
   ["Papel do Marcus","ok","O ideal é vender e operar; hoje está afogado na operação."],
   ["Tempo de uma cotação empresarial","ok","Depende do produto e do número de portais; trabalho bem manual."],
   ["BI da operação","ok","Não existe BI oficial; há o dashboard de Placement no Pipedrive. O Power BI da Mari, citado na transcrição, precisa ser confirmado."],
   ["Tamanho das frentes de Relacionamento e Placement","pend","Depende da vertical; ainda não definido para Risk."]]],
  ["Health · Murilo","var(--health)",[
-  ["Contratos e vidas por porte; volume de movimentações","lev","O gerente envia em etapa futura."],
+  ["Clientes e peso na receita","ok","Pela curva ABC: 31 clientes, 44,8% da receita anual, 6 em classe A com o Murilo."],
   ["Quem é o executivo dedicado do pós-venda","ok","Na maioria das vezes, o próprio Murilo. A transcrição não cita outro nome."],
   ["Renovações por mês","ok","Hoje não há como medir."],
   ["Venda cruzada","ok","Ainda não existe; o objetivo é antecipar cenários para gerar cross-sell."]]],
  ["Affinity · Flávia","var(--affinity)",[
-  ["Programas ativos e modelo de faturamento","lev","A gerente envia em etapa futura."],
+  ["Clientes e peso na receita","ok","Pela curva ABC: 8 clientes, 52,8% da receita anual, 4 em classe A com a Flávia."],
   ["Renovação e reajuste em Affinity","pend","Perguntar à Flávia."],
   ["Divisão do tempo da Flávia","pend","Perguntar à Flávia."],
   ["Informações mínimas que o comercial entrega","pend","Perguntar à Flávia."],
@@ -749,10 +922,13 @@ const QST = {ok:["st-ok","Respondida"],dec:["st-no","A decidir"],lev:["st-na","A
 document.getElementById("qs").innerHTML = QS.filter(q=>q[0].startsWith("Diretoria")||q[0].startsWith(VNAME)).map(q=>`<article class="q" style="--vc:${q[1]}"><h3>${q[0]}</h3><ol>${q[2].map(i=>`<li class="qa"><span>${i[0]} <span class="st ${QST[i[1]][0]}">${QST[i[1]][1]}</span></span><span class="ans">${i[2]}</span></li>`).join("")}</ol></article>`).join("");
 }
 const HMAP = {health:"H",risk:"R",affinity:"A"}, RMAP = {H:"health",R:"risk",A:"affinity"};
-function fromHash(){ const h = location.hash.replace("#",""); if(HMAP[h]){ VF = HMAP[h]; return true; } return false; }
+const MODES = {time:1,gestor:1,receita:1};
+function fromHash(){ const [v,m] = location.hash.replace("#","").split("-"); if(HMAP[v]){ VF = HMAP[v]; VM = MODES[m] ? m : "time"; return true; } return false; }
+function setHash(){ history.replaceState(null,"","#"+RMAP[VF]+"-"+VM); }
 fromHash(); build();
 window.addEventListener("hashchange", ()=>{ if(fromHash()) build(); });
-document.querySelectorAll(".vtab").forEach(b=>b.addEventListener("click", ()=>{ VF = b.dataset.v; history.replaceState(null,"","#"+RMAP[VF]); build(); document.querySelector(".vbar").scrollIntoView({block:"start"}); }));
+document.querySelectorAll(".vtab").forEach(b=>b.addEventListener("click", ()=>{ VF = b.dataset.v; setHash(); build(); document.querySelector(".vbar").scrollIntoView({block:"start"}); }));
+document.querySelectorAll(".mtab").forEach(b=>b.addEventListener("click", ()=>{ VM = b.dataset.m; setHash(); build(); document.querySelector(".vbar").scrollIntoView({block:"start"}); }));
 </script>
 </body>
 </html>
